@@ -1,13 +1,16 @@
+// src/app/app.component.ts
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
+import { NavBarComponent } from './nav-bar/nav-bar/nav-bar.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css'],
+    imports: [RouterModule, NavBarComponent]
 })
 export class AppComponent {
-  title = 'vercel-prueba';
+    
 }
