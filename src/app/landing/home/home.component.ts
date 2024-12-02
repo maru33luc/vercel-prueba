@@ -12,7 +12,7 @@ import { RouterLink } from '@angular/router';
 
 
 <section id="productos">
-    <h2>Nuestras Plantas</h2>
+    <h2>Nuestras PlantasV2</h2>
     <div *ngFor="let planta of plantas" class="producto">
         <h3>{{ planta.nombre }}</h3>
         <p>{{ planta.descripcion }}</p>
